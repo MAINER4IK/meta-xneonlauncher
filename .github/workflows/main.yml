@@ -14,21 +14,33 @@ runs-on: ubuntu-latest
 
 ```
 steps:
-  - name: Checkout fork
-    uses: actions/checkout@v4
+  - uses: actions/checkout@v4
     with:
       fetch-depth: 0
 
-  - name: Sync with upstream
+  - name: Backup workflows
     run: |
-      git config --global user.name "github-actions[bot]"
-      git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      mkdir -p /tmp/workflows
+      cp -r .github/workflows/* /tmp/workflows/ || true
 
-      git remote add upstream https://github.com/PrismLauncher/meta-launcher.git
+  - name: Sync upstream
+    run: |
+      git remote add upstream https://github.com/PrismLauncher/meta-launcher.git || true
       git fetch upstream
 
-      git checkout master
       git reset --hard upstream/master
 
+  - name: Restore workflows
+    run: |
+      mkdir -p .github/workflows
+      cp -r /tmp/workflows/* .github/workflows/ || true
+
+  - name: Commit workflows
+    run: |
+      git add .github/workflows
+      git commit -m "Restore workflows after sync" || true
+
+  - name: Push
+    run: |
       git push origin master --force
 ```
