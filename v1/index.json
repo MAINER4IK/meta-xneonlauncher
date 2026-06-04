@@ -1,0 +1,70 @@
+{
+    "formatVersion": 1,
+    "packages": [
+        {
+            "name": "Java Runtimes",
+            "sha256": "bfc5579fb442e4a4599c0995c6e082c5d47331ab00298c19fac8e5b996ee18fa",
+            "uid": "com.azul.java"
+        },
+        {
+            "name": "Java Runtimes",
+            "sha256": "c8a329e97a1b752fa30179ea3d8f2161295343b9a4d571d94abeac2756998e25",
+            "uid": "com.ibm.java"
+        },
+        {
+            "name": "LiteLoader",
+            "sha256": "21ed39d05d19449287bb3dbc19fd395d4fa12aefb3f0fe1846e008f28e6e4d95",
+            "uid": "com.mumfrey.liteloader"
+        },
+        {
+            "name": "Java Runtimes",
+            "sha256": "6615a3d7bd45909c9d3a88198dcbd7927ca1af038138bad3108be5bf4e031f26",
+            "uid": "net.adoptium.java"
+        },
+        {
+            "name": "Fabric Loader",
+            "sha256": "41df2faa608c1a6f7347eb7eb736eadc38d9ed0b4a9fe635602fbaca8bbb59ce",
+            "uid": "net.fabricmc.fabric-loader"
+        },
+        {
+            "name": "Intermediary Mappings",
+            "sha256": "14b906ecd0ee4a7da84070cf94c113d887084319d6efd3f97514056dcb447825",
+            "uid": "net.fabricmc.intermediary"
+        },
+        {
+            "name": "Minecraft",
+            "sha256": "a6ea937afd18c3d8297a758ac3825990ef4c25af3de4666cf9cad34226339552",
+            "uid": "net.minecraft"
+        },
+        {
+            "name": "Java Runtimes",
+            "sha256": "7ac306c5222edb0eb8d93e0bf5d7d04e980187aa9ed9abff71d95b0c842781e4",
+            "uid": "net.minecraft.java"
+        },
+        {
+            "name": "Forge",
+            "sha256": "e4b891cf48c9d3a5de381d4ec3ff401524e6acdb2b0f859375eaac4383e95254",
+            "uid": "net.minecraftforge"
+        },
+        {
+            "name": "NeoForge",
+            "sha256": "022108b74717ecb07ee2b02201cc615dbb35beae59e53b7523b2086c951fb5d5",
+            "uid": "net.neoforged"
+        },
+        {
+            "name": "LWJGL 2",
+            "sha256": "3db51500ebe6d0976ccc8618ad9ff76b475d4ad945440c68d0fc41e05508972b",
+            "uid": "org.lwjgl"
+        },
+        {
+            "name": "LWJGL 3",
+            "sha256": "ec42a57aa392377ee631d6ada42659f25deba934c4bac80d1a991abfd9d25454",
+            "uid": "org.lwjgl3"
+        },
+        {
+            "name": "Quilt Loader",
+            "sha256": "29bb5ba4aa3b381a0f59481496fb90d16ab8244eb054e16d7de8012e7fff3963",
+            "uid": "org.quiltmc.quilt-loader"
+        }
+    ]
+}
